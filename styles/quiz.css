@@ -94,7 +94,7 @@ body {
   cursor: pointer;
 }
 
-input[type="checkbox"] {
+.quiz__content-item-input {
   appearance: none;
   -webkit-appearance: none;
   display: flex;
@@ -107,7 +107,7 @@ input[type="checkbox"] {
   border-radius: 4px;
 }
 
-input[type="checkbox"]::before {
+.quiz__content-item-input::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -120,11 +120,11 @@ input[type="checkbox"]::before {
   border: 1px solid #DBCDB3;
 }
 
-input[type="checkbox"]:checked::before {
+.quiz__content-item-input:checked::before {
   opacity: 1;
 }
 
-.quiz__content-item-label:has(> input[type="checkbox"]:checked) {
+.quiz__content-item-label:has(> .quiz__content-item-input:checked) {
   background-color: #F8F6F1;
   border: 1px solid #DBCDB3;
 }
